@@ -1,7 +1,7 @@
 {% extends "layout.njk" %}
 
-{% block head %}
-    <title>Portifólio - Yuri Oliveira</title>
+{%block head %}
+    <title>Portifólio - Yuri Oliveira</title>    
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 {% endblock %}
 
@@ -17,11 +17,11 @@
 
                 <div class="card" id="{{ item.id }}">
                     <div class="card-image-container {{ 'featured-wrapper' if item.featured }} ">
-                        <img src="https://img.youtube.com/vi/{{ item.id }}/maxresdefault.jpg" alt="Imagem de {{ item.title }}">
-                    
+                        <img src="https://img.youtube.com/vi/{{ item.id }}/maxresdefault.jpg" alt="{{ item.title }}">
+
                         {% if item.featured %}
                             <div class="featured">Featured</div>
-                        {% endif%}
+                        {% endif %}
 
                     </div>
 
@@ -34,30 +34,11 @@
                         <p class="card-price">{{ item.price }}</p>
                     </div>
                 </div>
-
+            
             {% endfor %}
 
         </section>
 
-        <div class="modal-overlay">
+        <script src="/scripts.js"></script>
 
-            <div class="modal">
-                <a class="close-modal">
-                    <i class="material-icons">close</i>
-                </a>
-
-                <div class="modal-container">
-                    <iframe src="" frameborder="0"></iframe>
-                </div>
-            </div>
-
-        </div>
-
-        <script src="scripts.js"></script>
-        
     {% endblock %}
-
-
-        
-
-

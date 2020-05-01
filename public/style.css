@@ -176,3 +176,26 @@ iframe{
     border-radius: 16px;
     top: -6px;
 }
+
+/*Pag. Vídeo  */
+
+.video{
+    margin: 0 auto;
+    max-width: 800px;
+}
+
+/* .video .card{
+    height: 500px;
+} */
+
+.card-video-container{
+    position: relative;
+    padding-top: 62.5%;
+}
+
+.card-video-container iframe{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+}
