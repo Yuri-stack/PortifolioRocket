@@ -1,0 +1,27 @@
+{
+  "name": "portfolio_teste",
+  "version": "1.0.0",
+  "description": "Trabalho realizado como introdução/reciclagem das tecnologias HTML, CSS e JS.",
+  "main": "server.js",
+  "scripts": {
+    "start": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Yuri-stack/PortifolioRocket.git"
+  },
+  "keywords": [],
+  "author": "Yuri Oliveira",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Yuri-stack/PortifolioRocket/issues"
+  },
+  "homepage": "https://github.com/Yuri-stack/PortifolioRocket#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "nunjucks": "^3.2.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.3"
+  }
+}
